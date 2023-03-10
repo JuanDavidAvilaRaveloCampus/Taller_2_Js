@@ -1,32 +1,17 @@
-// nombre y 
-// 4. Construir el algoritmo que solicite el 
-// edad 
-// de 3 personas y determine el 
-// nombre de la persona con mayor edad.
-let nombre = [];
-let edad = [];
-do{
-    nombre.push(prompt('ingrese nombre'));
-    edad.push(parseInt(prompt('ingrese edad')));
-}while(confirm('confirme para ingresar nuevos datos'));
+// 5. Construir el algoritmo que 
+// lea por teclado 
+// dos números,
+// si el primero es mayor al segundo 
+// informar su suma y diferencia, 
+// en caso contrario, informar el producto y la
+// división del primero respecto al segundo.
 
-let edadMax = edad.indexOf(Math.max(...edad));
-console.log(`${nombre[edadMax]} tiene ${Math.max(...edad)} es el mayor`)
+let num1 = parseInt(prompt('Ingrese el primer número'));
+let num2 = parseInt(prompt('Ingrese el segundo número'));
 
+if ( num1 > num2 ){
+    console.log(`El primer número ingresado es mayor al segundo, la suma de ambos es igual a ${num1 + num2} y su diferencia es de ${num1 - num2}`)
+} else if ( num1 < num2) {
+    console.log(`El primer número ingresado es menor al segundo, el producto de ambos es de ${num1 * num2} y su divición es de ${num1 / num2}`)
+}
 
-
-// console.log(Math.max(lista))
-
-
-
-
-// numero mayor de edad
-// indice de la mayor edad
-// imprimir
-
-
-
-
-
-
-// lista.edad = prompt('ingrese edad')
